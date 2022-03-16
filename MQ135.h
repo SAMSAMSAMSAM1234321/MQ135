@@ -36,7 +36,7 @@ v1.0 - First release
 #define CORG 1.130128205
 
 /// Atmospheric CO2 level for calibration purposes
-#define ATMOCO2 414.47 //Global CO2 Aug 2021
+#define ATMOCO2 105.55 //Global CO2 Aug 2021
 
 class MQ135 {
  private:
