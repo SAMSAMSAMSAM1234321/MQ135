@@ -34,7 +34,7 @@ v1.0 - First release
 #define CORE -.003333333
 #define CORF -.001923077
 #define CORG 1.130128205
-
+#define rzero=105.75
 /// Atmospheric CO2 level for calibration purposes
 #define ATMOCO2 414.47 //Global CO2 Aug 2021
 
@@ -45,7 +45,7 @@ class MQ135 {
   float _rzero; // Calibration resistance at atmospheric CO2 level
 
  public:
-  MQ135(uint8_t pin, float rzero=76.63, float rload=10.0);
+  MQ135(uint8_t pin, float rzero=105.75, float rload=10.0);
   float getCorrectionFactor(float t, float h);
   float getResistance();
   float getCorrectedResistance(float t, float h);
